@@ -1,0 +1,95 @@
+digraph graph_name {
+	layout="circo";
+	graph [
+	charset = "UTF-8";
+	label = "Express dependensy",
+	labelloc = "t",
+	labeljust = "c",
+	bgcolor = "#343434",
+	fontcolor = white,
+	fontsize = 30,
+	style = "filled",
+	rankdir = TB,
+	margin = 0.2,
+	splines = spline,
+	ranksep = 1.0,
+	nodesep = 0.9
+	];
+
+	node [
+	colorscheme = "rdylgn11"
+	style = "solid,filled",
+	fontsize = 50,
+	fontcolor = 5,
+	fontname = "Migu 1M",
+	color = 7,
+	fillcolor = 11,
+	fixedsize = true,
+	height = 4.2,
+	width = 4.2
+	];
+
+	edge [
+	style = solid,
+	fontsize = 40,
+	fontcolor = white,
+	fontname = "Migu 1M",
+	color = white,
+	labelfloat = true,
+	labeldistance = 2.5,
+	labelangle = 70
+	];
+
+	"express";
+	"accepts" [shape = box];
+	"depd" [shape = box];
+	"methods" [shape = box];
+	"array-\nflatten" [shape = box];
+	"encodeurl" [shape = box];
+	"on-finished" [shape = box];
+	"body-parser" [shape = box];
+	"escape-html" [shape = box];
+	"parseurl" [shape = box];
+	"content-\ndisposition" [shape = box];
+	"etag" [shape = box];
+	"path-\nto-regexp" [shape = box];
+	"content-type" [shape = box];
+	"finalhandler" [shape = box];
+	"proxy-addr" [shape = box];
+	"cookie-\nsignature" [shape = box];
+	"fresh" [shape = box];
+	"qs" [shape = box];
+	"cookie" [shape = box];
+	"http-errors" [shape = box];
+	"range-parser" [shape = box];
+	"debug" [shape = box];
+	"merge-\ndescriptors" [shape = box];
+	"safe-buffer" [shape = box];
+
+
+	// edge define
+	"express" -> "accepts"
+	"express" -> "depd"
+	"express" -> "methods"
+	"express" -> "array-\nflatten"
+	"express" -> "encodeurl"
+	"express" -> "on-finished"
+	"express" -> "body-parser"
+	"express" -> "escape-html"
+	"express" -> "parseurl"
+	"express" -> "content-\ndisposition"
+	"express" -> "etag"
+	"express" -> "path-\nto-regexp"
+	"express" -> "content-type"
+	"express" -> "finalhandler"
+	"express" -> "proxy-addr"
+	"express" -> "cookie-\nsignature"
+	"express" -> "fresh"
+	"express" -> "qs"
+	"express" -> "cookie"
+	"express" -> "http-errors"
+	"express" -> "range-parser"
+	"express" -> "debug"
+	"express" -> "merge-\ndescriptors"
+	"express" ->"safe-buffer"
+	}

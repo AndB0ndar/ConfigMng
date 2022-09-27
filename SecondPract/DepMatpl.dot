@@ -1,0 +1,80 @@
+digraph graph_name {
+	layout="circo";
+	graph [
+	charset = "UTF-8";
+	label = "Matplotlib dependensy",
+	labelloc = "t",
+	labeljust = "c",
+	bgcolor = "#343434",
+	fontcolor = white,
+	fontsize = 30,
+	style = "filled",
+	rankdir = TB,
+	margin = 0.2,
+	splines = spline,
+	ranksep = 1.0,
+	nodesep = 0.9
+	];
+
+	node [
+	colorscheme = "rdylgn11"
+	style = "solid,filled",
+	fontsize = 50,
+	fontcolor = 5,
+	fontname = "Migu 1M",
+	color = 7,
+	fillcolor = 11,
+	fixedsize = true,
+	height = 3.2,
+	width = 4.2
+	];
+
+	edge [
+	style = solid,
+	fontsize = 40,
+	fontcolor = white,
+	fontname = "Migu 1M",
+	color = white,
+	labelfloat = true,
+	labeldistance = 2.5,
+	labelangle = 70
+	];
+
+	"matplotlib";
+	"python3-\ndateutil" [shape = box];
+	"python-\nmatplotlib-\ndata" [shape = box];
+	"python3-\npyparsing" [shape = box];
+	"python3-six" [shape = box];
+	"libjs-jquery" [shape = box];
+	"libjs-\njquery-ui" [shape = box];
+	"python3-\nnumpy" [shape = box];
+	"python3-\nnumpy-abi9" [shape = box];
+	"python3" [shape = box];
+	"python3-\ncycler" [shape = box];
+	"python3-\nkiwisolver" [shape = box];
+	"python3:any" [shape = box];
+	"libc6" [shape = box];
+	"libfreetype6" [shape = box];
+	"libgcc-s1" [shape = box];
+	"libpng16-16" [shape = box];
+	"libstdc++6" [shape = box];
+
+	// edge define
+	"matplotlib" -> "python3-\ndateutil";
+	"matplotlib" -> "python-\nmatplotlib-\ndata";
+	"matplotlib" -> "python3-\npyparsing";
+	"matplotlib" -> "python3-six";
+	"matplotlib" -> "libjs-jquery";
+	"matplotlib" -> "libjs-\njquery-ui";
+	"matplotlib" -> "python3-\nnumpy";
+	"matplotlib" -> "python3-\nnumpy-abi9";
+	"matplotlib" -> "python3";
+	"matplotlib" -> "python3-\ncycler";
+	"matplotlib" -> "python3-\nkiwisolver";
+	"matplotlib" -> "python3:any";
+	"matplotlib" -> "libc6";
+	"matplotlib" -> "libfreetype6";
+	"matplotlib" -> "libgcc-s1";
+	"matplotlib" -> "libpng16-16";
+	"matplotlib" -> "libstdc++6";
+	}
