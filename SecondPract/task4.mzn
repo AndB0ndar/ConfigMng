@@ -7,7 +7,7 @@ var 0..9: D; var 0..9: E; var 0..9: F;
 constraint A + B + C == D + E + F;
 constraint alldifferent([A,B,C,D,E,F]);
 
-solve minimize 100*A + 10*B + C;
+solve minimize A + B + C;
 
 output ["   ",show(A), show(B), show(C), "\n",
         "= ", show(D), show(E), show(F), "\n"];
